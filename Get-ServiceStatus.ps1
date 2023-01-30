@@ -5,7 +5,7 @@ Update below Variables with correct values and run the script.
 service_name, To, From, mail_relay, log_file, wait_time
 
 .Description
-Created by Haridas Vhadade.
+Created by Haridas V2.
 Date - 19-Jan-2022
 
 .Example
