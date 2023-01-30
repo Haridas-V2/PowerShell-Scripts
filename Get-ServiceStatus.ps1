@@ -10,7 +10,7 @@ Date - 19-Jan-2022
 
 .Example
 Update below veriable values and run the script or schedule to run it periodically. 
-service_name, To, From, mail_relay, log_file
+service_name, To, From, mail_relay, log_file, wait_time
 
 .\Get-ServiceStatus.ps1
 
