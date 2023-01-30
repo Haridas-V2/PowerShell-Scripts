@@ -17,15 +17,15 @@ service_name, To, From, mail_relay, log_file
 #>
 #====================== Update Veriables ======================#
 #Update below Variables as per your environments.
-$service_name = "AdobeARMservice"
+$service_name = "WindowsServiceName"
 
 #some service may take longer to start, adjust this time based on service startup time.
-$wait_time = 10
+$wait_time = 120
 
-$To = "Haridas.Vhadade@Veradigm.com"
+$To = "Email.To@example.com"
 
-$from = "Haridas.Vhadade@Veradigm.com"
-$mail_realy = "relay.corp.allscripts.com"
+$from = "Email.From@example.com"
+$mail_realy = "relay.Example.com"
 
 $log_file = "C:\windows\Temp\" + $service_name + "_ServiceStatus.log"
  
@@ -56,7 +56,7 @@ function Send-Email {
         [String]$mail_msg        
     )
     $body = "<h4>$mail_msg</h4>"
-    $body += "<a>Thanks,<br>Haridas Vhadade</a>"
+    $body += "<a>Thanks,<br>HaridasV2</a>"
      
     Send-MailMessage -From $from -To $To -Subject $mail_msg -Body $body -SmtpServer $mail_realy -BodyAsHtml
 }
